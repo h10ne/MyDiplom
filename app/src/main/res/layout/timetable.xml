@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="12dp"
+        android:background="@drawable/timetable_block"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="8:30 - 10:00"
+            android:textColor="@color/colorTextGrey"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:textColor="@color/colorTextGrey"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="19sp"
+            android:text="Математика (математический анализ, алгебра и геометрия)" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:textColor="@color/colorTextGrey"
+            android:textSize="18sp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="доц.Лукьянова Г.В." />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextGrey"
+            android:textSize="18sp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="ауд.303" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Практика"
+            android:textColor="@color/colorSmallText"
+            android:textSize="18sp"
+            android:fontFamily="@font/roboto_regular"
+            android:textFontWeight="100"/>
+    </LinearLayout>
+</LinearLayout>

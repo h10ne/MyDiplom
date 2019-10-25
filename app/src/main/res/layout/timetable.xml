@@ -14,7 +14,7 @@
         android:layout_marginBottom="5dp">
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/time"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="8:30 - 10:00"
@@ -24,7 +24,7 @@
             />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/nameLesson"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="10dp"
@@ -34,7 +34,7 @@
             android:text="Математика (математический анализ, алгебра и геометрия)" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/teacher"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="15dp"
@@ -44,7 +44,7 @@
             android:text="доц.Лукьянова Г.В." />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/room"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/colorTextGrey"
@@ -53,7 +53,7 @@
             android:text="ауд.303" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/type"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="right"

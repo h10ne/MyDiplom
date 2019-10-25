@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="ru.rksi.mydiplom.ui.notifications.NotificationsFragment"
+        android:name="ru.rksi.mydiplom.ui.timetable.TimetableFragment"
         android:label="@string/title_timetable"
         tools:layout="@layout/fragment_timetable" />
 </navigation>

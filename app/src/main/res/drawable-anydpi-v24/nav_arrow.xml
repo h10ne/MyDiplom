@@ -4,10 +4,11 @@
     android:viewportWidth="27.73913"
     android:viewportHeight="27.73913"
     android:tint="#FFFFFF">
-  <group android:translateX="1.8695652"
-      android:translateY="1.8695652">
-      <path
-          android:fillColor="#FF000000"
-          android:pathData="M2,22h20V2z"/>
-  </group>
+    <group
+        android:translateX="1.8695652"
+        android:translateY="1.8695652">
+        <path
+            android:fillColor="#FF000000"
+            android:pathData="M2,22h20V2z" />
+    </group>
 </vector>

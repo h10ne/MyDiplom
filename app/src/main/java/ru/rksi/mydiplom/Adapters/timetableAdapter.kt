@@ -9,9 +9,9 @@ import ru.rksi.mydiplom.APIClasses.Lesson
 import ru.rksi.mydiplom.R
 import kotlin.collections.ArrayList
 
-class TimetableAdapter: RecyclerView.Adapter<TimetableAdapter.ViewHolder>() {
+class TimetableAdapter : RecyclerView.Adapter<TimetableAdapter.ViewHolder>() {
 
-    private var LessonsList =  ArrayList<Lesson>()
+    private var LessonsList = ArrayList<Lesson>()
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private var time: TextView = itemView.findViewById(R.id.time)
@@ -20,8 +20,7 @@ class TimetableAdapter: RecyclerView.Adapter<TimetableAdapter.ViewHolder>() {
         private var room: TextView = itemView.findViewById(R.id.room)
         private var type: TextView = itemView.findViewById(R.id.type)
 
-        fun bind(lesson: Lesson)
-        {
+        fun bind(lesson: Lesson) {
             time.text = lesson.time
             name.text = lesson.name
             teacher.text = lesson.teacher
@@ -32,10 +31,9 @@ class TimetableAdapter: RecyclerView.Adapter<TimetableAdapter.ViewHolder>() {
     }
 
 
-
-    fun setItems(lessons:ArrayList<Lesson>)
-    {
-        var count=0
+    fun setItems(lessons: ArrayList<Lesson>) {
+        clearItems()
+        var count = 0
         lessons.forEach {
             LessonsList.add(it)
             notifyItemChanged(count)
@@ -45,8 +43,7 @@ class TimetableAdapter: RecyclerView.Adapter<TimetableAdapter.ViewHolder>() {
         //notifyDataSetChanged()
     }
 
-    fun clearItems()
-    {
+    fun clearItems() {
         LessonsList.clear()
         notifyDataSetChanged()
     }

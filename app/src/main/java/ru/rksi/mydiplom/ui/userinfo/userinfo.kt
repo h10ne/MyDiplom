@@ -15,7 +15,6 @@ class userinfo : Fragment() {
         fun newInstance() = userinfo()
     }
 
-    private lateinit var viewModel: UserinfoViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

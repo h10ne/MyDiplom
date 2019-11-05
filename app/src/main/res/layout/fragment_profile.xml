@@ -18,15 +18,25 @@
         tools:layout="@layout/fragment_userinfo" />
 
     <androidx.core.widget.ContentLoadingProgressBar
+        android:id="@+id/contentLoadingProgressBar"
         style="@style/Widget.AppCompat.ProgressBar.Horizontal"
         android:layout_width="match_parent"
         android:layout_height="3dp"
-        android:progress="100"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
+        android:progress="100"
         android:progressDrawable="@android:color/darker_gray"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/userinfo" />
+
+    <GridView
+        android:id="@+id/gridViewMenuItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contentLoadingProgressBar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

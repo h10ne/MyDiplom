@@ -10,8 +10,7 @@
         android:layout_height="35dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="17dp"
-        android:layout_marginBottom="17dp"
-        android:src="@drawable/portfolio" />
+        android:layout_marginBottom="17dp" />
 
     <TextView
         android:id="@+id/text"
@@ -20,6 +19,5 @@
         android:layout_marginLeft="25dp"
         android:layout_marginTop="19dp"
         android:layout_marginBottom="17dp"
-        android:text="Портфолио"
         android:textSize="9pt" />
 </LinearLayout>

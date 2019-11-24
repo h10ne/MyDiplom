@@ -47,7 +47,7 @@ class TimetableFragment : Fragment() {
         this.btPrevDay = root.findViewById(R.id.buttonPrevDate)
         Init()
         setDateText()
-        var timeTable = mocTimeTable()
+        val timeTable = mocTimeTable()
         updateAdapter(timeTable)
 
 
@@ -69,55 +69,55 @@ class TimetableFragment : Fragment() {
 
     private fun mocTimeTable(): Timetable {
 
-        var mlesson1 = Lesson(
+        val mlesson1 = Lesson(
             "8:30 — 10:00",
             "Иностранный язык",
             "ст.пр.Мартыненко Е.В.",
             "ауд.*308",
             "Практика"
         )
-        var mlesson2 =
+        val mlesson2 =
             Lesson("10:10 — 11:40", "Математика", "асс.Абдулрахман Х", "ауд.*308", "Практика")
-        var mondayList: ArrayList<Lesson> = ArrayList()
+        val mondayList: ArrayList<Lesson> = ArrayList()
         mondayList.add(mlesson1)
         mondayList.add(mlesson2)
-        var monday = Day(mondayList)
+        val monday = Day(mondayList)
 
 
-        var tlesson1 = Lesson("8:30 — 10:00", "История", "доц.Чижикова Ю.А.", "ауд.*407", "Лекция")
-        var tlesson2 =
+        val tlesson1 = Lesson("8:30 — 10:00", "История", "доц.Чижикова Ю.А.", "ауд.*407", "Лекция")
+        val tlesson2 =
             Lesson("10:10 — 11:40", "Экономическая теория", "проф.Губарь О.В", "ауд.*208", "Лекция")
-        var tuesdayList: ArrayList<Lesson> = ArrayList()
+        val tuesdayList: ArrayList<Lesson> = ArrayList()
         tuesdayList.add(tlesson1)
         tuesdayList.add(tlesson2)
-        var tuesday = Day(tuesdayList)
+        val tuesday = Day(tuesdayList)
 
-        var wlesson1 = Lesson(
+        val wlesson1 = Lesson(
             "8:30 — 10:00",
             "Экономическая теория",
             "ст.пр.Попов М. В.",
             "ауд.*308",
             "Практика"
         )
-        var wlesson2 =
+        val wlesson2 =
             Lesson("10:10 — 11:40", "Математика", "доц.Чувенков А.Ф.", "ауд.*307", "Лекция")
-        var wlesson3 = Lesson(
+        val wlesson3 = Lesson(
             "11:50 — 13:20",
             "Введение в специальность",
             "проф.Черненко О.Б.",
             "ауд.*404",
             "Лекция"
         )
-        var wednesdayList: ArrayList<Lesson> = ArrayList()
+        val wednesdayList: ArrayList<Lesson> = ArrayList()
         wednesdayList.add(wlesson1)
         wednesdayList.add(wlesson2)
         wednesdayList.add(wlesson3)
-        var wednesday = Day(wednesdayList)
+        val wednesday = Day(wednesdayList)
 
 
-        var thlesson1 =
+        val thlesson1 =
             Lesson("8:30 — 10:00", "История", "доц.Чижикова Ю.А.", "ауд.*403", "Практика")
-        var thlesson2 =
+        val thlesson2 =
             Lesson(
                 "10:10 — 11:40",
                 "Введение в специальность",
@@ -125,46 +125,46 @@ class TimetableFragment : Fragment() {
                 "ауд.*403",
                 "Практика"
             )
-        var thursdayList: ArrayList<Lesson> = ArrayList()
+        val thursdayList: ArrayList<Lesson> = ArrayList()
         thursdayList.add(thlesson1)
         thursdayList.add(thlesson2)
-        var thursday = Day(thursdayList)
+        val thursday = Day(thursdayList)
 
-        var flesson1 = Lesson(
+        val flesson1 = Lesson(
             "8:30 — 10:00",
             "История государственного управления",
             "проф.Самыгин П.С.",
             "ауд.*207",
             "Лекция"
         )
-        var flesson2 = Lesson(
+        val flesson2 = Lesson(
             "10:10 — 11:40",
             "История государственного управления",
             "проф.Самыгин П.С.",
             "ауд.*311",
             "Практика"
         )
-        var flesson3 = Lesson(
+        val flesson3 = Lesson(
             "11:50 — 13:20",
             "Элективные дисциплины ( модули) по физической культуре и спорту",
             "NN-препод.",
             "ауд.*сз",
             "Практика"
         )
-        var fridayList: ArrayList<Lesson> = ArrayList()
+        val fridayList: ArrayList<Lesson> = ArrayList()
         fridayList.add(flesson1)
         fridayList.add(flesson2)
         fridayList.add(flesson3)
-        var friday = Day(fridayList)
+        val friday = Day(fridayList)
 
-        var slesson1 = Lesson(
+        val slesson1 = Lesson(
             "8:30 — 10:00",
             "Безопасность жизнедеятельности",
             "доц.Парада Е.В.",
             "ауд.*404",
             "Лекция"
         )
-        var slesson2 =
+        val slesson2 =
             Lesson(
                 "10:10 — 11:40",
                 "Культура речи и деловое общение",
@@ -172,12 +172,12 @@ class TimetableFragment : Fragment() {
                 "ауд.*207",
                 "Практика"
             )
-        var saturdayList: ArrayList<Lesson> = ArrayList()
+        val saturdayList: ArrayList<Lesson> = ArrayList()
         saturdayList.add(slesson1)
         saturdayList.add(slesson2)
-        var saturday = Day(saturdayList)
+        val saturday = Day(saturdayList)
 
-        var unevenWeekList: ArrayList<Day> = ArrayList()
+        val unevenWeekList: ArrayList<Day> = ArrayList()
         unevenWeekList.add(monday)
         unevenWeekList.add(tuesday)
         unevenWeekList.add(wednesday)
@@ -186,11 +186,11 @@ class TimetableFragment : Fragment() {
         unevenWeekList.add(saturday)
 
 
-        var unevenWeek = Week(unevenWeekList)
+        val unevenWeek = Week(unevenWeekList)
 
-        var mlesson12 =
+        val mlesson12 =
             Lesson("8:30 — 10:00", "Математика", "асс.Абдулрахман Х.", "ауд.*404", "Практика")
-        var mlesson22 =
+        val mlesson22 =
             Lesson(
                 "10:10 — 11:40",
                 "Безопасность жизнедеятельности",
@@ -198,64 +198,64 @@ class TimetableFragment : Fragment() {
                 "ауд.*404",
                 "Практика"
             )
-        var mondayList2: ArrayList<Lesson> = ArrayList()
+        val mondayList2: ArrayList<Lesson> = ArrayList()
         mondayList2.add(mlesson12)
         mondayList2.add(mlesson22)
-        var monday2 = Day(mondayList2)
+        val monday2 = Day(mondayList2)
 
 
-        var tlesson12 = Lesson(
+        val tlesson12 = Lesson(
             "8:30 — 10:00",
             "Культура речи и деловое общение",
             "доц.Усенко Н.М.",
             "ауд.*207",
             "Лекция"
         )
-        var tlesson22 =
+        val tlesson22 =
             Lesson("10:10 — 11:40", "Экономическая теория", "проф.Губарь О.В", "ауд.*208", "Лекция")
-        var tlesson32 = Lesson(
+        val tlesson32 = Lesson(
             "11:50 — 13:20",
             "Элективные дисциплины ( модули) по физической культуре и спорту",
             "NN-препод.",
             "ауд.*сз",
             "Практика"
         )
-        var tuesdayList2: ArrayList<Lesson> = ArrayList()
+        val tuesdayList2: ArrayList<Lesson> = ArrayList()
         tuesdayList2.add(tlesson12)
         tuesdayList2.add(tlesson22)
         tuesdayList2.add(tlesson32)
-        var tuesday2 = Day(tuesdayList2)
+        val tuesday2 = Day(tuesdayList2)
 
-        var wlesson12 = Lesson(
+        val wlesson12 = Lesson(
             "8:30 — 10:00",
             "История государственного управления",
             "проф.Самыгин П.С.",
             "ауд.*403",
             "Лекция"
         )
-        var wlesson22 = Lesson(
+        val wlesson22 = Lesson(
             "10:10 — 11:40",
             "История государственного управления",
             "проф.Самыгин П.С.",
             "ауд.*403",
             "Практика"
         )
-        var wednesdayList2: ArrayList<Lesson> = ArrayList()
+        val wednesdayList2: ArrayList<Lesson> = ArrayList()
         wednesdayList2.add(wlesson12)
         wednesdayList2.add(wlesson22)
-        var wednesday2 = Day(wednesdayList2)
+        val wednesday2 = Day(wednesdayList2)
 
 
-        var thlesson12 = Lesson(
+        val thlesson12 = Lesson(
             "8:30 — 10:00",
             "Экономическая теория",
             "ст.пр.Попов М. В.",
             "ауд.*411",
             "Практика"
         )
-        var thlesson22 =
+        val thlesson22 =
             Lesson("10:10 — 11:40", "История", "доц.Чижикова Ю.А.", "ауд.*411", "Практика")
-        var thlesson32 = Lesson(
+        val thlesson32 = Lesson(
             "11:50 — 13:20",
             "Иностранный язык",
             "ст.пр.Мартыненко Е.В.",
@@ -263,57 +263,56 @@ class TimetableFragment : Fragment() {
             "Практика"
         )
 
-        var thursdayList2: ArrayList<Lesson> = ArrayList()
+        val thursdayList2: ArrayList<Lesson> = ArrayList()
         thursdayList2.add(thlesson12)
         thursdayList2.add(thlesson22)
         thursdayList2.add(thlesson32)
-        var thursday2 = Day(thursdayList2)
+        val thursday2 = Day(thursdayList2)
 
-        var flesson12 = Lesson(
+        val flesson12 = Lesson(
             "8:30 — 10:00",
             "Иностранный язык.",
             "ст.пр.Мартыненко Е.В.",
             "ауд.*404",
             "Практика"
         )
-        var flesson22 = Lesson(
+        val flesson22 = Lesson(
             "10:10 — 11:40",
             "Культура речи и деловое общение",
             "доц.Полякова О.А.",
             "ауд.*307",
             "Практика"
         )
-        var flesson32 = Lesson(
+        val flesson32 = Lesson(
             "11:50 — 13:20",
             "Элективные дисциплины ( модули) по физической культуре и спорту",
             "NN-препод.",
             "ауд.*сз",
             "Практика"
         )
-        var fridayList2: ArrayList<Lesson> = ArrayList()
+        val fridayList2: ArrayList<Lesson> = ArrayList()
         fridayList2.add(flesson12)
         fridayList2.add(flesson22)
         fridayList2.add(flesson32)
-        var friday2 = Day(fridayList2)
+        val friday2 = Day(fridayList2)
 
 
-        var evenWeekList: ArrayList<Day> = ArrayList()
+        val evenWeekList: ArrayList<Day> = ArrayList()
         evenWeekList.add(monday2)
         evenWeekList.add(tuesday2)
         evenWeekList.add(wednesday2)
         evenWeekList.add(thursday2)
         evenWeekList.add(friday2)
-        var evenWeek = Week(evenWeekList)
+        val evenWeek = Week(evenWeekList)
 
-        var weekList: ArrayList<Week> = ArrayList()
+        val weekList: ArrayList<Week> = ArrayList()
         weekList.add(unevenWeek)
         weekList.add(evenWeek)
-        var timetableList: ArrayList<Week> = ArrayList()
+        val timetableList: ArrayList<Week> = ArrayList()
         timetableList.add(unevenWeek)
         timetableList.add(evenWeek)
-        var timetable = Timetable(timetableList)
+        val timetable = Timetable(timetableList)
         return timetable
-        loadLessons(monday.lessons)
     }
 
     fun btNextDate_Click() {
@@ -344,7 +343,7 @@ class TimetableFragment : Fragment() {
         }
         selectedDate.add(Calendar.DATE, -1)
         setDateText()
-        var timeTable = mocTimeTable()
+        val timeTable = mocTimeTable()
         updateAdapter(timeTable)
     }
 
@@ -357,7 +356,7 @@ class TimetableFragment : Fragment() {
     }
 
     private fun updateAdapter(timetable: Timetable) {
-        var weekNumber: Int = selectedDate.get(Calendar.WEEK_OF_YEAR)
+        val weekNumber: Int = selectedDate.get(Calendar.WEEK_OF_YEAR)
         if (weekNumber % 2 == 0)
             weekState = WeekState.EVEN
         else
@@ -375,8 +374,8 @@ class TimetableFragment : Fragment() {
             currentDay = timetable.Weeks[week].days[day]
             loadLessons(currentDay.lessons)
         } catch (ex:Exception){
-            var lesson = Lesson("","В этот день у группы нет пар","","","")
-            var lessons:ArrayList<Lesson> = ArrayList()
+            val lesson = Lesson("","В этот день у группы нет пар","","","")
+            val lessons:ArrayList<Lesson> = ArrayList()
             lessons.add((lesson))
             loadLessons(lessons)
         }

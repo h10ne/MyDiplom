@@ -4,11 +4,14 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.GridView
+import android.widget.AdapterView
 import android.widget.SimpleAdapter
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProviders
+import kotlinx.android.synthetic.main.fragment_profile.*
 import ru.rksi.mydiplom.R
+import android.content.Intent
+import ru.rksi.mydiplom.Tasks
+
 
 class ProfileFragment : Fragment() {
 
@@ -17,6 +20,9 @@ class ProfileFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        val ft = fragmentManager!!.beginTransaction()
+        ft.addToBackStack(tag)
+        ft.commit()
         val root = inflater.inflate(R.layout.fragment_profile, container, false)
 
         return root
@@ -24,11 +30,25 @@ class ProfileFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        addItemsToGridView()
+        downloadDatasToGridView()
+        gvMenuList.onItemClickListener = object : AdapterView.OnItemClickListener {
+            override fun onItemClick(
+                parent: AdapterView<*>?,
+                view: View?,
+                position: Int,
+                id: Long
+            ) {
+              if(id==3.toLong())
+              {
+                  val intent = Intent(context, Tasks::class.java)
+                  startActivity(intent)
+              }
+            }
+        }
 
     }
 
-    private fun addItemsToGridView() {
+    private fun downloadDatasToGridView() {
         var data: ArrayList<HashMap<String, Any>> = ArrayList(6)
 
         var hs0: HashMap<String, Any> = HashMap()
@@ -66,7 +86,6 @@ class ProfileFragment : Fragment() {
 
         var simplyAdapter =
             SimpleAdapter(context, data, R.layout.profile_items_view, from, to.toIntArray())
-        var view: GridView = view!!.findViewById(R.id.gridViewMenuItems)
-        view.adapter = simplyAdapter
+        gvMenuList.adapter = simplyAdapter
     }
 }

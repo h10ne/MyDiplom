@@ -37,7 +37,7 @@
         app:layout_constraintTop_toBottomOf="@+id/contentLoadingProgressBar">
 
         <GridView
-            android:id="@+id/gridViewMenuItems"
+            android:id="@+id/gvMenuList"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layout_constraintStart_toStartOf="parent"

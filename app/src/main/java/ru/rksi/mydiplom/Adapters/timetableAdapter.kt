@@ -33,14 +33,8 @@ class TimetableAdapter : RecyclerView.Adapter<TimetableAdapter.ViewHolder>() {
 
     fun setItems(lessons: ArrayList<Lesson>) {
         clearItems()
-        var count = 0
-        lessons.forEach {
-            LessonsList.add(it)
-            notifyItemChanged(count)
-            count++
-        }
-        //journalList.addAll(journalItems)
-        //notifyDataSetChanged()
+        LessonsList.addAll(lessons)
+        notifyDataSetChanged()
     }
 
     fun clearItems() {
@@ -50,7 +44,7 @@ class TimetableAdapter : RecyclerView.Adapter<TimetableAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view =
-            LayoutInflater.from(parent.context).inflate(R.layout.timetable, parent, false)
+            LayoutInflater.from(parent.context).inflate(R.layout.timetable_items_view, parent, false)
         return ViewHolder(view)
     }
 

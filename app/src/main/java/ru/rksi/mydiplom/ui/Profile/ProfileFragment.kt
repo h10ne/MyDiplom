@@ -9,8 +9,7 @@ import android.widget.SimpleAdapter
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.fragment_profile.*
 import ru.rksi.mydiplom.R
-import android.content.Intent
-import ru.rksi.mydiplom.Tasks
+import androidx.navigation.findNavController
 
 
 class ProfileFragment : Fragment() {
@@ -20,9 +19,6 @@ class ProfileFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val ft = fragmentManager!!.beginTransaction()
-        ft.addToBackStack(tag)
-        ft.commit()
         val root = inflater.inflate(R.layout.fragment_profile, container, false)
 
         return root
@@ -40,8 +36,7 @@ class ProfileFragment : Fragment() {
             ) {
               if(id==3.toLong())
               {
-                  val intent = Intent(context, Tasks::class.java)
-                  startActivity(intent)
+                  view!!.findNavController().navigate(R.id.tasksFragment)
               }
             }
         }

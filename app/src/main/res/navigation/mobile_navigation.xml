@@ -12,7 +12,7 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_profile"
         android:name="ru.rksi.mydiplom.ui.profile.ProfileFragment"
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_profile" >
@@ -38,6 +38,11 @@
     <fragment
         android:id="@+id/createTask"
         android:name="ru.rksi.mydiplom.ui.profile.createTask"
-        android:label="fragment_create_task"
+        android:label="Cоздать задание"
         tools:layout="@layout/fragment_create_task" />
+    <fragment
+        android:id="@+id/noLogin"
+        android:name="ru.rksi.mydiplom.noLogin"
+        android:label="fragment_no_login"
+        tools:layout="@layout/fragment_no_login" />
 </navigation>

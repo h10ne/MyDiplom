@@ -8,28 +8,53 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="20dp"
-        android:orientation="vertical"
         android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp">
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/taskedit_block"
             android:hint="Название дисциплины"
-            android:layout_marginBottom="20dp"/>
+            android:padding="15dp" />
+
+        <TextView
+            android:id="@+id/deadline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:textSize="17dp"
+            android:background="@drawable/taskedit_block"
+            android:text="К какому числу нужно выполнить"
+            android:padding="15dp" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="К какому числу нужно выполнить"
-            android:layout_marginBottom="20dp"/>
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/taskedit_block"
+            android:gravity="start"
+            android:hint="Текст задания"
+            android:inputType="textMultiLine"
+            android:lines="10"
+            android:padding="15dp" />
 
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:inputType="textMultiLine"
-            android:ems="10"
-            android:hint="Текст задания"/>
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/taskedit_block"
+            android:hint="Напомнить за"
+            android:padding="15dp" />
+
+        <Button
+            style="@style/ButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Сохранить" />
     </LinearLayout>
 </FrameLayout>

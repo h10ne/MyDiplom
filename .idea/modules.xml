@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/GitHub-MyDiplom.iml" filepath="$PROJECT_DIR$/GitHub-MyDiplom.iml" />
-      <module fileurl="file://$PROJECT_DIR$/MyDiplom.iml" filepath="$PROJECT_DIR$/MyDiplom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Documents-Git-RsueFrontEnd-MyDiplom.iml" filepath="$PROJECT_DIR$/Documents-Git-RsueFrontEnd-MyDiplom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Documents-Git-RsueFrontEnd-MyDiplom~1.iml" filepath="$PROJECT_DIR$/Documents-Git-RsueFrontEnd-MyDiplom~1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Documents-Git-RsueFrontEnd-MyDiplom~2.iml" filepath="$PROJECT_DIR$/Documents-Git-RsueFrontEnd-MyDiplom~2.iml" group="MyDiplom" />
+      <module fileurl="file://$PROJECT_DIR$/app/Documents-Git-RsueFrontEnd-app.iml" filepath="$PROJECT_DIR$/app/Documents-Git-RsueFrontEnd-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/Documents-Git-RsueFrontEnd-app~1.iml" filepath="$PROJECT_DIR$/app/Documents-Git-RsueFrontEnd-app~1.iml" group="MyDiplom/app" />
+      <module fileurl="file://$PROJECT_DIR$/app/Documents-Git-RsueFrontEnd-app~2.iml" filepath="$PROJECT_DIR$/app/Documents-Git-RsueFrontEnd-app~2.iml" group="MyDiplom/app" />
+      <module fileurl="file://$PROJECT_DIR$/Git-RsueFrontEnd-MyDiplom.iml" filepath="$PROJECT_DIR$/Git-RsueFrontEnd-MyDiplom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/Git-RsueFrontEnd-app.iml" filepath="$PROJECT_DIR$/app/Git-RsueFrontEnd-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyDiplom.iml" filepath="$PROJECT_DIR$/MyDiplom.iml" group="MyDiplom" />
+      <module fileurl="file://$PROJECT_DIR$/RsueFrontEnd-MyDiplom.iml" filepath="$PROJECT_DIR$/RsueFrontEnd-MyDiplom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/RsueFrontEnd-app.iml" filepath="$PROJECT_DIR$/app/RsueFrontEnd-app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

@@ -5,9 +5,11 @@
     <color name="colorAccent">#D81B60</color>
     <color name="colorTextWhite">#FFFFFF</color>
     <color name="colorArrowNoActive">#abd9ff</color>
-    <color name="colorArrowActive">#2CA1FF</color>
+    <color name="colorPrimaryLight">#2CA1FF</color>
     <color name="colorTitle">#393b7c</color>
     <color name="colorTextGrey">#212121</color>
     <color name="colorBlack">#000000</color>
     <color name="colorSmallText">#5e5e5e</color>
+    <color name="backgroundColor">#F7F7F7</color>
+    <color name="lightGrey">#BDBDBD</color>
 </resources>

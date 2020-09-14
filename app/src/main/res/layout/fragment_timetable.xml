@@ -1,92 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tabHost"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:theme="@style/TabWidgetTheme">
 
     <LinearLayout
-        android:layout_marginTop="15dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <ImageButton
-            android:id="@+id/buttonPrevDate"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@null"
-            android:onClick="changeDateButtonClicked"
-            android:rotation="+135"
-            android:tint="@drawable/button_active_selector"
-            app:srcCompat="@drawable/nav_arrow" />
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="18"
-            android:orientation="vertical">
-
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <LinearLayout
+                android:id="@+id/studentTimetable"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:orientation="vertical"
+                android:saveEnabled="false">
 
                 <TextView
-                    android:id="@+id/dayName"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/chooseGroupTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:fontFamily="@font/roboto_medium"
-                    android:text="Когда"
-                    android:textColor="@color/colorTitle"
-                    android:textSize="25sp" />
+                    android:gravity="center"
+                    android:text="Выберите группу!"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="27sp"
+                    android:visibility="visible" />
 
-                <ImageButton
-                    android:id="@+id/buttonDateSelect"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_weight="1"
-                    android:background="@null"
-                    app:srcCompat="@drawable/calendar" />
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPagerTimetable"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/studentWeeklyRecycle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
             </LinearLayout>
 
-            <TextView
-                android:id="@+id/textDate"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/roboto_regular"
-                android:paddingTop="3dp"
-                android:text="понедельник "
-                android:textColor="@color/colorTextGrey"
-                android:textSize="20sp" />
+            <LinearLayout
+                android:id="@+id/teacherTimetable"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-        </LinearLayout>
+                <TextView
+                    android:id="@+id/chooseTeacherTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:text="Выберите преподавателя!"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="27sp"
+                    android:visibility="visible" />
 
-        <ImageButton
-            android:id="@+id/buttonNextDate"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@null"
-            android:onClick="changeDateButtonClicked"
-            android:rotation="-45"
-            android:tint="@drawable/button_active_selector"
-            app:srcCompat="@drawable/nav_arrow" />
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPagerTimetableTeacher"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/teacherWeeklyRecycle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+        </FrameLayout>
 
     </LinearLayout>
-
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/timetableRecycle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-</LinearLayout>
+</TabHost>

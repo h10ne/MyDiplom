@@ -1,11 +1,18 @@
 <resources>
-    <string name="app_name">MyDiplom</string>
-    <string name="title_home">Главная</string>
+    <string name="app_name">Ринх. Портал</string>
+    <string name="title_home">Новости</string>
     <string name="title_profile">Профиль</string>
     <string name="title_timetable">Расписание</string>
+    <string name="title_changeGroup">Выбрать группу</string>
+    <string name="title_changeTeacher">Выбрать преподавателя</string>
+    <string name="title_settings">Настройки</string>
+    <string name="authorization">Авторизация</string>
+
     <string name="profile_name">Имя Фамилия</string>
     <string name="rank">Должность</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="TTView">Вид расписания</string>
+    <string name="TTViewSubs">Расписание будет выводиться на несколько дней</string>
 </resources>

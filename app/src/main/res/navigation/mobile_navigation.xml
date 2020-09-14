@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="ru.rksi.mydiplom.ui.home.HomeFragment"
+        android:name="ru.rksi.mydiplom.ui.news.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
@@ -19,13 +19,35 @@
         <action
             android:id="@+id/action_navigation_dashboard_to_tasksFragment"
             app:destination="@id/tasksFragment" />
+        <action
+            android:id="@+id/action_navigation_profile_to_marksFragment"
+            app:destination="@id/marksFragment" />
+        <action
+            android:id="@+id/action_navigation_profile_to_myFacultyFragment"
+            app:destination="@id/myFacultyFragment" />
+        <action
+            android:id="@+id/action_navigation_profile_to_notificationFragment2"
+            app:destination="@id/notificationFragment" />
+        <action
+            android:id="@+id/action_navigation_profile_to_notificationSettingFragment"
+            app:destination="@id/notificationSettingFragment" />
     </fragment>
 
     <fragment
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_timetable"
         android:name="ru.rksi.mydiplom.ui.timetable.TimetableFragment"
         android:label="@string/title_timetable"
-        tools:layout="@layout/fragment_timetable" />
+        tools:layout="@layout/fragment_timetable" >
+        <action
+            android:id="@+id/action_navigation_notifications_to_chooseGroupForTimetable"
+            app:destination="@id/chooseGroupForTimetable" />
+        <action
+            android:id="@+id/action_navigation_notifications_to_timetableSettings"
+            app:destination="@id/timetableSettings" />
+        <action
+            android:id="@+id/action_navigation_notifications_to_setTeacherForTimetable"
+            app:destination="@id/setTeacherForTimetable" />
+    </fragment>
     <fragment
         android:id="@+id/tasksFragment"
         android:name="ru.rksi.mydiplom.ui.profile.TasksFragment"
@@ -37,12 +59,68 @@
     </fragment>
     <fragment
         android:id="@+id/createTask"
-        android:name="ru.rksi.mydiplom.ui.profile.createTask"
+        android:name="ru.rksi.mydiplom.ui.profile.CreateTask"
         android:label="Cоздать задание"
         tools:layout="@layout/fragment_create_task" />
     <fragment
         android:id="@+id/noLogin"
-        android:name="ru.rksi.mydiplom.noLogin"
-        android:label="fragment_no_login"
+        android:name="ru.rksi.mydiplom.ui.NoLogin"
+        android:label="@string/authorization"
         tools:layout="@layout/fragment_no_login" />
+    <fragment
+        android:id="@+id/chooseGroupForTimetable"
+        android:name="ru.rksi.mydiplom.ui.timetable.ChooseGroupForTimetable"
+        android:label="@string/title_changeGroup" />
+    <fragment
+        android:id="@+id/timetableSettings"
+        android:name="ru.rksi.mydiplom.ui.timetable.TimetableSettings"
+        android:label="Настройки"
+        tools:layout="@layout/fragment_timetable_settings" />
+    <fragment
+        android:id="@+id/setTeacherForTimetable"
+        android:name="ru.rksi.mydiplom.ui.timetable.setTeacherForTimetable"
+        android:label="Выбрать расписание преподавателя"
+        tools:layout="@layout/fragment_set_teacher_for_timetable" />
+    <fragment
+        android:id="@+id/marksFragment"
+        android:name="ru.rksi.mydiplom.ui.profile.MarksFragment"
+        android:label="Успеваемость"
+        tools:layout="@layout/fragment_marks" />
+    <fragment
+        android:id="@+id/notificationSettingFragment"
+        android:name="ru.rksi.mydiplom.ui.profile.NotificationSettingsFragment"
+        android:label="Настройки уведомлений"
+        tools:layout="@layout/fragment_notification_settings" >
+        <action
+            android:id="@+id/action_notificationSettingFragment_to_createNotification"
+            app:destination="@id/createNotification" />
+    </fragment>
+    <fragment
+        android:id="@+id/myFacultyFragment"
+        android:name="ru.rksi.mydiplom.ui.profile.MyFacultyFragment"
+        android:label="Мой факультет"
+        tools:layout="@layout/fragment_my_faculty" >
+        <action
+            android:id="@+id/action_myFacultyFragment_to_userProfile"
+            app:destination="@id/userProfile" />
+    </fragment>
+    <fragment
+        android:id="@+id/userProfile"
+        android:name="ru.rksi.mydiplom.ui.profile.UserProfile"
+        android:label="fragment_user_profile"
+        tools:layout="@layout/fragment_user_profile" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="ru.rksi.mydiplom.ui.profile.NotificationFragment"
+        android:label="Уведомления"
+        tools:layout="@layout/fragment_notification">
+        <action
+            android:id="@+id/action_notificationFragment2_to_notificationFragment"
+            app:destination="@id/notificationSettingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createNotification"
+        android:name="ru.rksi.mydiplom.ui.profile.CreateNotification"
+        android:label="Добавить уведомление"
+        tools:layout="@layout/fragment_create_notification" />
 </navigation>

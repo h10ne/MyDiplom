@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="horizontal">
 
     <ImageView
@@ -17,7 +18,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="25dp"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/colorBlack"
+        tools:text="Мой факультет"
         android:layout_marginTop="19dp"
         android:layout_marginBottom="17dp"
-        android:textSize="9pt" />
+        android:textSize="10pt" />
 </LinearLayout>
